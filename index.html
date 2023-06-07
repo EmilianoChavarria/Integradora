@@ -5,44 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-
 <body>
     <header>
+        <nav class="navbar bg-body-tertiary ">
+            <div class="container-fluid">
+                <img src="./img/logo.png" alt="" width="40px">
+              <a class="navbar-brand">S  I   M   A</a>
+            </div>
+          </nav>
+
+          
         <div class="arriba">
             <img src="./img/logo.png" alt="" width="40px">
             <div class="titulo">
-                <a href="index.html"><p>S I M A</p></a>
-                
+                <p>S I M A</p>
             </div>
-
         </div>
     </header>
 
-
     <div class="contenedor">
-        <div class="barra-lateral">
-            
-            <div class="parte">
-                <hr>
-                <h2>Acciones</h2>
-                <ul>
-                    <li>
-                        <a href="agregar.html">Registrar usuario</a>
-                    </li>
-
-                    <li><a href="#">Registrar vehículo</a></li>
-                    <li><a href="#">Inventario</a></li>
-                    <li><a href="login.html">Cerrar sesión</a></li>
-                </ul>
+        <div class="fondo">
+            <div class="formulario">
+                <p>INICIAR SESIÓN</p>   
+                <form class="formulario-registro" action="index.html">
+                    <label class="etiqueta" for="name">Usuario:</label>
+                    <br><br>
+                    <input type="text" id="name" name="user_name" placeholder="Usuario">
+                <br><br>
+                    <label class="etiqueta" for="name">Contraseña:</label>
+                <br><br>
+                    <input type="password" id="contra" name="contraseña" placeholder="Contraseña">
+                
+                
+                
+            <br><br>
+            <button type="submit" onclick="index.html">Iniciar</button>
+            <br>
+            <a href="index.html" class="asd" >¿Olvidaste tu contraseña?</a></form>
+                <section >
+                    
+                </section>
+                    
             </div>
+        </div>
 
-        </div>
-        <div class="contenido">
-            
-        </div>
+
+    </div>
     </div>
 
 </body>
