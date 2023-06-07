@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-add.css">
 </head>
 
 <body>
@@ -14,7 +14,9 @@
         <div class="arriba">
             <img src="./img/logo.png" alt="" width="40px">
             <div class="titulo">
-                <p>S I M A</p>
+                <a href="index.html">
+                    <p>S I M A</p>
+                </a>
             </div>
 
         </div>
@@ -23,7 +25,7 @@
 
     <div class="contenedor">
         <div class="barra-lateral">
-            
+
             <div class="parte">
                 <hr>
                 <h2>Acciones</h2>
@@ -40,7 +42,43 @@
 
         </div>
         <div class="contenido">
-            
+            <div class="formulario-agregar">
+                <form action="">
+                    <label for="">Nombre</label>
+                    <input type="text" name="" id="">
+                    <label class="apellido" for="">Apellido Materno</label>
+                    <input type="text">
+                    <label for="">Apellido paterno</label>
+                    <input type="text">
+                    <label for="">CURP</label>
+                    <input type="text">
+                    <label for="">RFC</label>
+                    <input type="text">
+                    <label for="">Dirección</label>
+                    <input type="text">
+                    <label for="">Telefono</label>
+                    <input type="text">
+                    <label for="">Fecha de nacimiento</label>
+                    <input type="date"><br>
+                    <label for="">Sexo</label><br>
+                    Femenino
+                    <input type="checkbox">
+                    Masculino
+                    <input type="checkbox">
+                    <label for="">Rol</label>
+                    <select name="" id="">
+                        <option>Rol en el sistema</option>
+                        <option>Gerente</option>
+                        <option>Recepción</option>
+                        <option>Caja</option>
+                        <option>Mecanico</option>
+                        <option>Cliente</option>
+                    </select>
+                    <input type="submit" value="Agregar usuario">
+                    <input type="reset" value="Limpiar datos">
+                </form>
+            </div>
+
         </div>
     </div>
 
