@@ -6,54 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary ">
-            <div class="container-fluid">
-                <img src="./img/logo.png" alt="" width="40px">
-              <a class="navbar-brand">S  I   M   A</a>
-            </div>
-          </nav>
-
-          
-        <div class="arriba">
-            <img src="./img/logo.png" alt="" width="40px">
+        <div class="header">
+            <img src="./assets/img/logo.png" width="40px" style="margin-left: 10px;">
             <div class="titulo">
                 <p>S I M A</p>
             </div>
         </div>
     </header>
 
-    <div class="contenedor">
-        <div class="fondo">
-            <div class="formulario">
-                <p>INICIAR SESIÓN</p>   
-                <form class="formulario-registro" action="index.html">
-                    <label class="etiqueta" for="name">Usuario:</label>
-                    <br><br>
-                    <input type="text" id="name" name="user_name" placeholder="Usuario">
-                <br><br>
-                    <label class="etiqueta" for="name">Contraseña:</label>
-                <br><br>
-                    <input type="password" id="contra" name="contraseña" placeholder="Contraseña">
-                
-                
-                
-            <br><br>
-            <button type="submit" onclick="index.html">Iniciar</button>
-            <br>
-            <a href="index.html" class="asd" >¿Olvidaste tu contraseña?</a></form>
-                <section >
-                    
-                </section>
-                    
-            </div>
+    <div class="container1">
+        <div class="container2">
+            <img src="./assets/img/img_ingresar.png" width="100px" style="margin-top: 20px;">
+            <p>INICIAR SESIÓN</p>
+            <form class="formulario-registro" action="./pages/agregar.html">
+
+                <label for="name">Usuario:</label><br>
+
+                <input type="text" id="name" name="user_name" placeholder="Usuario"><br><br>
+
+                <label for="name">Contraseña:</label><br>
+
+                <input type="password" id="contra" name="contraseña" placeholder="Contraseña">
+
+                <button type="submit" style="margin-top: 40px;">Ingresar</button><br>
+
+                <a href="recuperar_contrasena.html" class="olvidaste_contrasena">¿Olvidaste tu contraseña?</a>
+            </form>
+            <section>
+            </section>
+            </form>
         </div>
-
-
-    </div>
     </div>
 
 </body>
