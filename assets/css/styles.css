@@ -1,15 +1,8 @@
-body,
-html {
-    height: 95%;
-    margin: 0;
-    padding: 0;
-}
 
-.header {
-    position: relative;
+.head {
+    
     height: 55px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    padding-top: 15px;
 }
 
 .titulo {
@@ -18,18 +11,16 @@ html {
     position: relative;
     margin-left: 75px;
     bottom: 65px;
-}
-.titulo a:link,
-a:visited,
-a:active{
-    text-decoration: none;
-    color: black;
+    margin-top: 30px;
 }
 
 .container1 {
     margin-top: 15px;
-    background: linear-gradient(to right, #9A0000, #DD0000, #D61111, #E32222, #E71C1C, #EC4646);
-    min-height: 100%;
+    background: linear-gradient(89.96deg, #9A0000 2.32%, #DD0000 19.12%, #D61111 38.02%, #E32222 61.65%, #E71C1C 82.65%, #EC4646 99.95%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 675px;
+
 }
 
 .container2 {
@@ -69,11 +60,6 @@ button{
     margin-top: 25px;
 }
 
-.barra-lateral {
-    width: 250px;
-    background-color: #ffffff;
-}
-
 .link a:link,
 a:visited,
 a:active{
@@ -81,4 +67,17 @@ a:active{
     color: rgb(187, 181, 181);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
+}
+
+.container3{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 0px 0px;
+width: 259px;
+height: 675px;
+left: 0px;
+margin-top: 15px;
+bottom: 0px;
+background: #ae7d7d;
 }
