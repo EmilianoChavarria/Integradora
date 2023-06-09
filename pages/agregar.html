@@ -23,10 +23,10 @@
             <div class="container3">
                 <nav class="nav">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Works</a></li>
-                        <li><a href="../index.html">Log out</a></li>
+                        <li><a href="#" class="link-a">Registrar usuario</a></li>
+                        <li><a href="#" class="link-a">Registrar vehículo</a></li>
+                        <li><a href="#" class="link-a">Inventario</a></li>
+                        <li><a href="../index.html" class="link-a">Log out</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,38 +37,93 @@
                 <div class="contenido">
                     <div class="formulario-agregar">
                         <form action="">
-                            <label for="">Nombre</label>
-                            <input type="text" name="" id="">
-                            <label class="apellido" for="">Apellido Materno</label>
-                            <input type="text">
-                            <label for="">Apellido paterno</label>
-                            <input type="text">
-                            <label for="">CURP</label>
-                            <input type="text">
-                            <label for="">RFC</label>
-                            <input type="text">
-                            <label for="">Dirección</label>
-                            <input type="text">
-                            <label for="">Telefono</label>
-                            <input type="text">
-                            <label for="">Fecha de nacimiento</label>
-                            <input type="date"><br>
-                            <label for="">Sexo</label><br>
-                            Femenino
-                            <input type="checkbox">
-                            Masculino
-                            <input type="checkbox">
-                            <label for="">Rol</label>
-                            <select name="" id="">
-                                <option>Rol en el sistema</option>
-                                <option>Gerente</option>
-                                <option>Recepción</option>
-                                <option>Caja</option>
-                                <option>Mecanico</option>
-                                <option>Cliente</option>
-                            </select>
-                            <input type="submit" value="Agregar usuario">
-                            <input type="reset" value="Limpiar datos">
+                            <div class="row">
+                                <div class="col" style="font-size: 20px;">
+                                    <b>Datos Personales</b>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Nombre</label>
+                                    <input type="text" name="" id="">
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="apellido" for="">Apellido Materno</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col">
+                                    <label for="">Apellido paterno</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">CURP</label>
+                                    <input type="text">
+
+                                </div>
+                                <div class="col">
+                                    <label for="">RFC</label>
+                                    <input type="text">
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Telefono</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Fecha de nacimiento</label>
+                                    <input type="date"><br>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <label for="">Sexo</label><br>
+                                <div class="col">
+                                    <label for="">Femenino</label>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="col">
+                                    <label for="">Masculino</label>
+                                    <input type="checkbox">
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col" style="font-size: 20px;">
+                                        <b>Dirección</b>
+                                    </div>
+                                </div>
+                                <div class="col-4" style="width: 70px;">
+                                    <label for="">Calle</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-4" style="width: 70px; margin-left: 90px;"><label for="">Colonia</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-4" style="width: 70px; margin-left: 90px;"><label
+                                        for="">Municipio</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input class="btn btn-success" type="submit" value="Agregar usuario">
+
+                                </div>
+                                <div class="col">
+                                    <input class="btn btn-danger" type="reset" value="Limpiar datos">
+
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>

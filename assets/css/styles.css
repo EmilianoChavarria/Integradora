@@ -81,3 +81,36 @@ bottom: 0px;
 background: #ffffff;
 box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+.parte a:link,
+a:visited,
+a:active{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.parte.link-a{
+margin-bottom: 50px;
+
+}
+
+.contenido{
+background-color: #FF3636;
+    width: 500px;
+    height: 550px;
+    margin-left: 30%;
+    border-radius: 5px;
+    background: linear-gradient(to bottom left, #EC4646 50%, #e73131 50%);
+}
+.formulario-agregar{
+    padding: 20px;
+}
+
+.formulario-agregar input{
+    border-radius: 5px;
+    width: 150px;
+    display: block;
+    opacity: 70%;
+}
