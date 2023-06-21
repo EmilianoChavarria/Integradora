@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-add</title>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css">
+</head>
+
+<body class="bg-primary-subtle">
+    <!-- header -->
+    <div class="bg-white p-3 fw-semibold" style="height: 65px;">
+        <div class="d-inline ms-3">
+            <img class="img" src="../assets/img/sima-icon.png" alt="">
+        </div>
+        <div class="d-inline ms-3 h5 ">
+            <a class="text-decoration-none text-dark" href="../html/main.html">SIMA - Sistema de Mantenimiento a
+                automóviles</a>
+        </div>
+        <div class="d-inline" style="margin-left: 650px; ">
+            <a href="#" class="btn btn-danger btn-sm">
+               Cerrar sesión
+              </a>
+        </div>
+    </div>
+    <!-- body -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+
+            <div class="col-2 sidebar" style="border-top: 1px solid #b8b8b8;">
+                <ul class="list-style-none">
+                    <li>Usuarios
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-user-add.html">Agregar usuario</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-user-view.html">Visualizar usuarios</a>
+                        </ol>
+                    </li>
+                    <li>Vehículos
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-vehicle-add.html">Agregar vehículo</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Visualizar vehiculos</a>
+                        </ol>
+                    </li>
+                    <li>Inventario
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Agregar producto</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Visualizar productos</a>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <!-- Todo lo que va en la página, EDITAR DESDE AQUÍ -->
+            <div class="col-9">
+                <div class="container rounded-5 p-4 bg-white mt-5 ms-5">
+                    <div>
+                        <table class="table table-stripped">
+                            <thead>
+                                <tr>
+                                    <form class="form-inline">
+                                            <input class="form-control mr-sm-2 w-25 d-inline" type="search" placeholder="Nombre de usuario" aria-label="Search">
+                                        <button class="btn btn-outline-success btn-m ms-4 d-inline " type="submit">Buscar</button>
+                                      </form>
+                                </tr>
+                                <tr><th>Nombre Completo:</th>
+                                <th>Email:</th>
+                                <th>Telefono:</th>
+                                <th>Usuario:</th>
+                                <th> Dirección: </th>
+                                <th>Rol:</th>
+                                <th>Acciones:</th></tr>
+                                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Aldrick Emiliano Chavarría Ibarra</td>
+                                    <td>aldrickemilianoch@gmail.com</td>
+                                    <td>2281482361</td>
+                                    <td>Emiliano123</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium distinctio quo, assumenda neque libero ratione fugit beatae fuga doloremque nihil blanditiis soluta fugiat non commodi perspiciatis quam repellendus! Dignissimos, explicabo.</td>
+                                    <td>Administrador</td>
+                                    <td>
+                                        <button class="btn btn-outline-warning btn-sm d-inline" >Editar</button>
+                                        <button class="btn btn-outline-danger btn-sm d-inline" >Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>

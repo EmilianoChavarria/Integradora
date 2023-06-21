@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-add</title>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css">
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-primary-subtle">
+    <!-- header -->
+    <div class="bg-white p-3 fw-semibold" style="height: 65px;">
+        <div class="d-inline ms-3">
+            <img class="img" src="../assets/img/sima-icon.png" alt="">
+        </div>
+        <div class="d-inline ms-3 h5 ">
+            <a class="text-decoration-none text-dark" href="../html/main.html">SIMA - Sistema de Mantenimiento a
+                automóviles</a>
+        </div>
+        <div class="d-inline" style="margin-left: 650px; ">
+            <a href="#" class="btn btn-danger btn-sm">
+               Cerrar sesión
+              </a>
+        </div>
+        
+
+    </div>
+    <!-- body -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+
+            <div class="col-2 sidebar" style="border-top: 1px solid #b8b8b8;">
+                <ul class="list-style-none">
+                    <li>Usuarios
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-user-add.html">Agregar usuario</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-user-view.html">Visualizar usuarios</a>
+                        </ol>
+                    </li>
+                    <li>Vehículos
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-vehicle-add.html">Agregar vehículo</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Visualizar vehiculos</a>
+                        </ol>
+                    </li>
+                    <li>Inventario
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Agregar producto</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Visualizar productos</a>
+                        </ol>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- Todo lo que va en la página, EDITAR DESDE AQUÍ -->
+            <div class="col-9">
+                <div class="container rounded-5 p-4 bg-white" style="width: 600px; margin-top: 40px;  height: 600px; background-color: rgb(255, 255, 255);">
+                    
+                    <form id="add-user" action="/html/admin-user-view.html">
+                        <p class="h3" style="text-align: center;">Registro de datos del usuario</p>
+                        <p class="h5 mt-3 text-secondary">Datos personales</p>
+                        <div class="row mt-2">
+                            <div class="col d-inline">
+                                <label for="nombre" class="fw-bold">Nombre:</label>
+                                <input type="text" name="nombre" id="nombre" class="form-control" required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="a_paterno" class="fw-bold">Apellido Paterno:</label>
+                                <input type="text" name="a_paterno" id="a_paterno" class="form-control" required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="a_materno" class="fw-bold">Apellido Materno:</label>
+                                <input type="text" name="a_materno" id="a_materno" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label for="email" class="fw-bold">Correo Electrónico:</label>
+                                <input type="text" name="email" id="email" class="form-control" style="width: 250px;"
+                                    required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="curp" class="fw-bold">CURP:</label>
+                                <input type="text" name="curp" id="curp" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col d-inline">
+                                <label for="rfc" class="fw-bold">RFC:</label>
+                                <input type="text" name="rfc" id="rfc" class="form-control" required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="rfc" class="fw-bold">Telefono:</label>
+                                <input type="text" name="rfc" id="rfc" class="form-control" required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="rfc" class="fw-bold">Rol en el sistema:</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Rol en el sistema</option>
+                                    <option value="1">Administardor</option>
+                                    <option value="2">Recepción</option>
+                                    <option value="3">Clientes</option>
+                                    <option value="4">Mecanico</option>
+                                    <option value="5">Caja </option>
+                                  </select>
+                            </div>
+                        </div>
+                        <p class="h5 mt-3 text-secondary">Dirección: </p>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label for="calle" class="fw-bold">Calle:</label>
+                                <input type="text" name="calle" id="calle" class="form-control" required>
+                            </div>
+                            <div class="col">
+                                <label for="colonia" class="fw-bold">Colonia:</label>
+                                <input type="text" name="colonia" id="colonia" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label for="cp" class="fw-bold">Código Postal:</label>
+                                <input type="text" name="cp" id="cp" class="form-control" required>
+                            </div>
+                            <div class="col">
+                                <label for="n_exterior" class="fw-bold">N. Exterior:</label>
+                                <input type="text" name="n_exterior" id="n_exterior" class="form-control" required>
+                            </div>
+                            <div class="col">
+                                <label for="n_interior" class="fw-bold">N. Interior:</label>
+                                <input type="text" name="n_interior" id="n_interior" class="form-control" required>
+                            </div>
+                        </div>
+                        <div style="margin-left: 22%;">
+                            <button type="submit" class="btn bg-primary text-white mt-4 fw-semibold" style="width: 300px;">Registrar usuario</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function (){
+            const form = document.getElementById("add-user");
+            form.addEventListener("submit", function (event){
+                if (!form.checkValidity()){
+                    event.preventDefault();
+                    event.stopPropagation();
+    
+                }
+                form.classList.add("was-validated");
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

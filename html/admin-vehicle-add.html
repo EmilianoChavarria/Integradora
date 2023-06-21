@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle add</title>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css">
+</head>
+
+<body class="bg-primary-subtle">
+    <!-- header -->
+    <div class="bg-white p-3 fw-semibold" style="height: 65px;">
+        <div class="d-inline ms-3">
+            <img class="img" src="../assets/img/sima-icon.png" alt="">
+        </div>
+        <div class="d-inline ms-3 h5 ">
+            <a class="text-decoration-none text-dark" href="../html/main.html">SIMA - Sistema de Mantenimiento a
+                automóviles</a>
+        </div>
+        <div class="d-inline" style="margin-left: 650px; ">
+            <a href="#" class="btn btn-danger btn-sm">
+                Cerrar sesión
+            </a>
+        </div>
+
+    </div>
+    <!-- body -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+
+            <div class="col-2 sidebar" style="border-top: 1px solid #b8b8b8;">
+                <ul class="list-style-none">
+                    <li>Usuarios
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-user-add.html">Agregar usuario</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-user-view.html">Visualizar
+                                usuarios</a>
+                        </ol>
+                    </li>
+                    <li>Vehículos
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="admin-vehicle-add.html">Agregar vehículo</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Visualizar vehiculos</a>
+                        </ol>
+                    </li>
+                    <li>Inventario
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Agregar producto</a>
+                        </ol>
+                        <ol class="mt-2">
+                            <a class="text-decoration-none text-dark" href="#">Visualizar productos</a>
+                        </ol>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-9">
+                <div class="container rounded-5 p-5 bg-white" style="width: 600px; margin-top: 40px;  height: 500px; background-color: rgb(255, 255, 255);">
+
+                    <form id="add-user" action="/html/admin-user-view.html">
+                        <p class="h3" style="text-align: center;">Registro de datos del vehículo</p>
+                        <p class="h5 mt-3 text-secondary">Información técnica</p>
+                        <div class="row mt-3">
+                            <div class="col d-inline">
+                                <label for="marca" class="fw-bold">Marca:</label>
+                                <input type="text" name="marca" id="marca" class="form-control" required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="modelo" class="fw-bold">Modelo:</label>
+                                <input type="text" name="modelo" id="modelo" class="form-control" required>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col d-inline">
+                                <label for="año" class="fw-bold">Año:</label>
+                                <input type="text" name="año" id="año" class="form-control" required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="matricula" class="fw-bold">Matricula:</label>
+                                <input type="text" name="matricula" id="matricula" class="form-control" required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="transmision" class="fw-bold">Transmisión:</label>
+                                <input type="text" name="transmision" id="transmision" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col d-inline">
+                                <label for="tipo_combustible" class="fw-bold">Tipo de combustible:</label>
+                                <input type="text" name="tipo_combustible" id="tipo_combustible" class="form-control" required>
+                            </div>
+                            <div class="col d-inline">
+                                <label for="capacidad" class="fw-bold">Capacidad:</label>
+                                <input type="text" name="capacidad" id="capacidad" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <label for="numero_serie" class="fw-bold">Numero de serie:</label>
+                                <input type="text" name="numero_serie" id="numero_serie" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-left: 22%;">
+                            <button type="submit" class="btn bg-primary text-white mt-4 fw-semibold"
+                                style="width: 300px;">Registrar vehiculo</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+</body>
+</html>

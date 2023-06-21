@@ -1,0 +1,29 @@
+.img {
+    height: 38px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+}
+
+.sidebar ol{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
